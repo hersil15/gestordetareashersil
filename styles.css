@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1E90FF; /* Azul intenso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Estilos de encabezado */
+h1 {
+  color: #ff4500; /* Naranja */
+  margin-bottom: 20px;
+}
+
+/* Estilos de la entrada de tareas */
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="text"]:hover {
+  border-color: #ff4500; /* Naranja */
+}
+
+input[readonly] {
+  background-color: #f9f9f9;
+  border: none;
+}
+
+/* Estilos del botón de agregar tarea */
+button {
+  background-color: #ff4500; /* Naranja */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1E90FF; /* Azul intenso */
+  color: #ff4500; /* Naranja */
+}
+
+/* Estilos de la lista de tareas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos de los botones de la tarea */
+.task-buttons {
+  display: flex;
+}
+
+.task-buttons button {
+  background-color: #ff4500; /* Naranja */
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  flex: 1; /* Para que todos los botones tengan el mismo tamaño */
+}
+
+.task-buttons button:hover {
+  background-color: #1E90FF; /* Azul intenso */
+  color: #ff4500; /* Naranja */
+}
+
+/* Estilos de la tarea completada */
+.completed .completed-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  input[type="text"], button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .task-input {
+      flex-direction: column;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
